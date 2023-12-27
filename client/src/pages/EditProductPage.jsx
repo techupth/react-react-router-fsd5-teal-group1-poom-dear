@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import EditProductForm from "../components/EditProductForm";
 
 function EditProductPage() {
@@ -5,7 +6,9 @@ function EditProductPage() {
     <div>
       <h1>Edit Product Page</h1>
       <EditProductForm />
-      <button>Back to Home</button>
+      <Link to="/">
+        <button>Back to Home</button>
+      </Link>
     </div>
   );
 }
