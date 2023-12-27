@@ -22,7 +22,7 @@ function HomePage() {
     try {
       await axios.delete(`http://localhost:4001/products/${id}`);
       const newProduct = products.filter((product) => {
-        id == products.id;
+        id !== products.id;
       });
       setProducts(newProduct);
     } catch (error) {
